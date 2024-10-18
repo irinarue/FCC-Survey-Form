@@ -1,0 +1,98 @@
+*, *::before, *::after {
+    margin: 0 auto;
+    padding: 0
+  }
+  
+  html {
+    box-sizing: border-box;
+    font-family: Papyrus;
+    text-align: center;
+    margin: 25px;
+    background-color:rgb(205, 127, 72);
+    color: rgb(54, 37, 25);
+  }
+
+  header {
+    font-size: 135%;
+    margin-bottom: 15px;
+  }
+  
+  label {
+    display: block; 
+  }
+
+  p {
+    font-size: 125%;
+    font-weight: bold;
+  }
+
+  legend{
+    font-weight: bold;
+    font-size: 65%;
+    text-transform: uppercase;
+  }
+
+  fieldset {
+    margin: 15px auto;
+    padding: 25px;
+    border: 3px double rgb(89, 57, 35);
+    
+  }
+
+  input, textarea {
+    background-color: rgb(123, 78, 46) ;
+    padding: 5px;
+    border: none;
+    margin: 5px auto;
+    accent-color: rgb(123, 78, 46);
+    color: rgb(255, 212, 181);
+    font-family: papyrus;
+  }
+
+  input[type="text"], input[type="email"], input[type="number"], input[type="textarea"], input[type="range"],textarea, select{
+    width: 95%;
+    text-align: center;
+  }
+
+  input::placeholder, textarea::placeholder {
+    font-family: papyrus;
+    font-style: italic;
+    color: rgb(215, 171, 140);
+  }
+
+  select {
+    background-color: rgb(123, 78, 46) ;
+    padding: 5px;
+    border: none;
+    margin: 5px auto;
+    font-family: papyrus;
+    font-weight:bold;
+    color: rgb(215, 171, 140);
+  }
+
+  hr {
+    width: 95%;
+    margin: 15px auto;
+    border: none;
+    border-top: 1px solid rgb(89, 57, 35);
+  }
+
+  #radiobuttons {
+    text-align: left;
+    width: 47%;
+  }
+
+  #checkboxes {
+    text-align: left;
+    width:75%;
+  }
+
+  input[type="submit"] {
+    width: 100%;
+    border: 2px double rgb(215, 171, 140);
+    color: rgb(215, 171, 140);
+    font-family: papyrus;
+    text-transform: uppercase;
+    font-weight: bold;
+  }
+

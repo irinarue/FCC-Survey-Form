@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Survey Form</title>
+  </head>
+  <body>
+    <header>
+        <h1 id="title">Happy?</h1>
+        <p id="description">Tell us what makes you happy</p>
+    </header>
+    <main>
+        <form id="survey-form" method="post">
+            <fieldset>
+                <legend>Personal Information</legend>
+                <label for="name" id="name-label">Full name: 
+                    <input id="name" type="text" name="name" placeholder="Example Muster" required>
+                </label>
+                <label for="email" id="email-label">E-Mail: 
+                    <input id="email" type="email" name="email" placeholder="example.muster@mail.com" required>
+                </label>
+                <label for="number" id="number-label">Age: 
+                    <input id="number" type="number" name="age" min="18" max="120" placeholder="55">
+                </label>
+            </fieldset>
+            <fieldset>
+                <legend>Activities & Experiences</legend>
+                <p>What activity or experience consistently brings you the most joy? <br>
+                    Choose your top 3:</p>
+                <label for="No1">No 1: 
+                    <select id="dropdown" name="No1">
+                        <option value=" ">Select your No 1</option>
+                        <option value="1">Traveling and exploring new places</option>
+                        <option value="2">Exercising or playing sports</option>
+                        <option value="3">Spending time in nature</option>
+                        <option value="4">Meditating or practicing mindfulness</option>
+                        <option value="5">Cooking or trying new recipes</option>
+                        <option value="6">Learning something new (like a skill or language)</option>
+                        <option value="7">Spending time with friends and/or family</option>
+                        <option value="8">Working on personal projects (DIY, gardening, etc.)</option>
+                        <option value="9">Attending live events (concerts, theater, sports games)</option>
+                        <option value="10">Playing video games or other digital entertainment</option>
+                        <option value="11">Helping others or volunteering</option>
+                    </select>
+                </label>
+                <label for="No2">No 2: 
+                    <select id="No2" name="No2">
+                        <option value=" ">Select your No 2</option>
+                        <option value="1">Traveling and exploring new places</option>
+                        <option value="2">Exercising or playing sports</option>
+                        <option value="3">Spending time in nature</option>
+                        <option value="4">Meditating or practicing mindfulness</option>
+                        <option value="5">Cooking or trying new recipes</option>
+                        <option value="6">Learning something new (like a skill or language)</option>
+                        <option value="7">Spending time with friends and/or family</option>
+                        <option value="8">Working on personal projects (DIY, gardening, etc.)</option>
+                        <option value="9">Attending live events (concerts, theater, sports games)</option>
+                        <option value="10">Playing video games or other digital entertainment</option>
+                        <option value="11">Helping others or volunteering</option>
+                    </select>
+                </label>
+                <label for="No3">No 3: 
+                    <select id="No3" name="No3">
+                        <option value=" ">Select your No 3</option>
+                        <option value="1">Traveling and exploring new places</option>
+                        <option value="2">Exercising or playing sports</option>
+                        <option value="3">Spending time in nature</option>
+                        <option value="4">Meditating or practicing mindfulness</option>
+                        <option value="5">Cooking or trying new recipes</option>
+                        <option value="6">Learning something new (like a skill or language)</option>
+                        <option value="7">Spending time with friends and/or family</option>
+                        <option value="8">Working on personal projects (DIY, gardening, etc.)</option>
+                        <option value="9">Attending live events (concerts, theater, sports games)</option>
+                        <option value="10">Playing video games or other digital entertainment</option>
+                        <option value="11">Helping others or volunteering</option>
+                    </select>
+                </label>
+                <hr>
+                <p>Do you find happiness more in the journey (process) or the destination (outcome)?</p>
+                <div id="radiobuttons">
+                    <label for="process">
+                        <input type="radio" name="journeyOrDestination" id="process" value="process" checked> Process / Journey
+                    </label>
+                    <label for="outcome">
+                        <input type="radio" name="journeyOrDestination" id="outcome" value="outcome"> Outcome / Destination
+                    </label>
+                </div>
+            </fieldset>
+            <fieldset>
+                <legend>Relationships & Goals</legend>
+                <p>How important are personal relationships (family, friends, etc.) to your happiness?</p>
+                <label for="importanceOfRelationships"> From not at all to very very important:
+                    <input id="importanceOfRelationships" type="range" min="0" max="10">
+                </label>
+
+                <hr>
+
+                <p>Which of the following contributes most to your happiness when achieving personal goals?</p>
+                <div id="checkboxes">
+                    <label for="achievingGoals1">
+                        <input id="chievingGoals1" type="checkbox" value="accomplishment">
+                        Feeling a sense of accomplishment
+                    </label>
+                    <label for="achievingGoals2">
+                        <input id="achievingGoals2" type="checkbox" value="recognition">
+                        Gaining recognition or praise from others
+                    </label>
+                    <label for="achievingGoals3">
+                        <input id="achievingGoals3" type="checkbox" value="knowledge">
+                        Learning new skills or knowledge
+                    </label>
+                    <label for="achievingGoals4">
+                        <input id="achievingGoals4" type="checkbox" value="success">
+                        Increasing financial stability or success
+                    </label>
+                    <label for="achievingGoals5">
+                        <input id="achievingGoals5" type="checkbox" value="well-being">
+                        Improving physical or mental well-being
+                    </label>
+                    <label for="achievingGoals6">
+                        <input id="achievingGoals6" type="checkbox" value="contributing">
+                        Contributing to something bigger (community, world, etc.)
+                    </label>
+                </div>
+            </fieldset>
+            <fieldset>
+                <legend>Additional infos</legend>
+                <label for="additional-info">
+                    <textarea id="additional-info" type="textarea" name="additional-info" rows="4" cols="30" placeholder="Anything you want to add....." ></textarea>
+                </label>
+            </fieldset>
+            <input type="submit" value="Submit" id="submit">        
+        </form>
+    </main>
+  </body>
+</html>
